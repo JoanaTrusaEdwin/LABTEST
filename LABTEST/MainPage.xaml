@@ -2,71 +2,19 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LABTEST.MainPage">
-    
-    <!--ORIGINAL CODE WITH NUMBER-->
-    
-    <!--<StackLayout>
-        <Grid VerticalOptions="CenterAndExpand"
-              RowDefinitions="*" ColumnDefinitions="auto,*"
-              Margin="20">
-
-            <Label x:Name="label1" Grid.Row="0"
-                   Grid.Column="0"
-                   HorizontalOptions="CenterAndExpand"/>
-            <Slider x:Name="slider1" Grid.Row="0"
-                    Grid.Column="1"
-                    HorizontalOptions="FillAndExpand"
-                    Maximum="100"
-                    ValueChanged="OnSliderValueChanged"/>
-            
-            <Label x:Name="label2" Grid.Row="1"
-                   Grid.Column="2"
-                   HorizontalOptions="CenterAndExpand"/>
-        </Grid>
-    </StackLayout>-->
-    
-    <!--CODE WITH COLOUR-->
-    
-    <!--<StackLayout>
-        <Grid VerticalOptions="CenterAndExpand"
-              RowDefinitions="*" ColumnDefinitions="auto,*"
-              Margin="20">
-
-            <Label x:Name="label1" Grid.Row="0"
-                   Grid.Column="0"
-                   HorizontalOptions="CenterAndExpand"
-                   TextColor="White"/>
-            <Slider x:Name="slider1" Grid.Row="0"
-                    Grid.Column="1"
-                    HorizontalOptions="FillAndExpand"
-                    Maximum="100"
-                    ValueChanged="OnSliderValueChanged">
-                <Slider.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                        <GradientStop Offset="0" Color="Red"/>
-                        <GradientStop Offset="1" Color="Blue"/>
-                    </LinearGradientBrush>
-                </Slider.Background>
-            </Slider>
-            <Label x:Name="label2" Grid.Row="0"
-                   Grid.Column="2"
-                   HorizontalOptions="CenterAndExpand"/>
-        </Grid>
-    </StackLayout>-->
 
     <StackLayout>
         <Grid VerticalOptions="CenterAndExpand"
           RowDefinitions="Auto, Auto" 
           ColumnDefinitions="auto,*"
           Margin="20">
-            
-            
+
             <!--The number-->
             <Label x:Name="label1" Grid.Row="0"
                Grid.Column="0"
                HorizontalOptions="CenterAndExpand"
                TextColor="black"/>
-            
+
             <!--The slider-->
             <Slider x:Name="slider1" Grid.Row="0"
                 Grid.Column="1"
@@ -81,16 +29,18 @@
                     </LinearGradientBrush>
                 </Slider.Background>
             </Slider>
-            
+
             <!--Pass or Fail-->
             <Label x:Name="label2" Grid.Row="1"
                Grid.Column="1"
                HorizontalOptions="CenterAndExpand"
                TextColor="black"/>
-            
-
         </Grid>
+        
+        <!--NOTHING TO DO FOR QUESTION 1, JUST FOR NAVIGATION PURPOSE TO VIEW PAGE FOR QUESTION 2 AND 3-->
+        <Button Text="Go to Question 2" Clicked="OnGoToQuestion2Clicked"/>
+        <Button Text="Go to Question 3" Clicked="OnGoToQuestion3Clicked"/>
+        
+        
     </StackLayout>
-
-
 </ContentPage>

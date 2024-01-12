@@ -33,17 +33,18 @@
             }
         }
 
-        //private void OnCounterClicked(object sender, EventArgs e)
-        //{
-        //    count++;
+        //NOTHING TO DO WITH QUESTION 1, JUST FOR NAVIGATION PURPOSE TO GO TO QUESTION 2 AND 3
+        private async void OnGoToQuestion2Clicked(object sender, EventArgs e)
+        {
+            
+            await Navigation.PushAsync(new question2());
+        }
 
-        //    if (count == 1)
-        //        CounterBtn.Text = $"Clicked {count} time";
-        //    else
-        //        CounterBtn.Text = $"Clicked {count} times";
+        private async void OnGoToQuestion3Clicked(object sender, EventArgs e)
+        {
 
-        //    SemanticScreenReader.Announce(CounterBtn.Text);
-        //}
+            await Navigation.PushAsync(new question3());
+        }
+
     }
-
 }
